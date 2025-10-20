@@ -1,4 +1,0 @@
-= Welcome to my documentations
-
-Please check https://jmbruel.github.io/docs/.
-

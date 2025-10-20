@@ -4,7 +4,7 @@ repo_url: https://github.com/jmbruel/docs
 repo_name: GitHub
 site_url: https://jmbruel.github.io/docs/
 site_description: Documentation site of Jean-Michel Bruel
-copyright: '2025, Jean-Michel Bruel' 
+# copyright: '2025, Jean-Michel Bruel' 
 
 theme:
   name: mkdocs
