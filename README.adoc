@@ -1,4 +1,6 @@
 = Welcome to my documentations
 
+image:https://github.com/jmbruel/docs/actions/workflows/pages/pages-build-deployment/badge.svg[GitHub Pages Build Status,link=https://github.com/jmbruel/docs/actions/workflows/pages/pages-build-deployment]
+
 Please check https://jmbruel.github.io/docs/.
 
