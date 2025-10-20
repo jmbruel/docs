@@ -1,5 +1,10 @@
 # (c) JMB 2025
 site_name: JMB Docs
+repo_url: https://github.com/jmbruel/docs
+repo_name: GitHub
+site_url: https://jmbruel.github.io/docs/
+site_description: Documentation site of Jean-Michel Bruel
+copyright: '2025, Jean-Michel Bruel' 
 
 theme:
   name: mkdocs
@@ -22,3 +27,16 @@ plugins:
     - search
     - macros
     - badges
+    - document-dates:
+        position: top            # Display position: top(after title) bottom(end of document)
+        type: timeago               # Date type: date datetime timeago, default: date
+        exclude:                 # List of excluded files
+          - temp.md                  # Example: exclude the specified file
+          - blog/*                   # Example: exclude all files in blog folder, including subfolders
+        date_format: '%Y-%m-%d'  # Date format strings (e.g., %Y-%m-%d, %b %d, %Y)
+        time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+        show_author: true        # Author display mode: true(avatar) text(text) false(hidden)
+        recently-updated:    # Whether to turn on recently updated data, default: false
+          limit: 10        # Limit the number of docs displayed
+          label: "Recently Updated"
+

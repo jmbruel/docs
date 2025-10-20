@@ -5,3 +5,6 @@ install:
 
 site/index.html: docs/*.md mkdocs.yml
 	mkdocs build --strict
+
+deploy: build
+	mkdocs gh-deploy

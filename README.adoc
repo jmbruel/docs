@@ -1,4 +1,4 @@
 = Welcome to my documentations
 
-Please check ...
+Please check https://jmbruel.github.io/docs/.
 
