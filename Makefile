@@ -1,9 +1,7 @@
 build: site/index.html
 
 install:
-# 	pip install -r requirements.txt
-	pip install 'mkdocs-macros-plugin[test]'
-
+	pip install -r requirements.txt
 
 site/index.html: docs/*.md mkdocs.yml
 	mkdocs build --strict

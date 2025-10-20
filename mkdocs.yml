@@ -21,3 +21,4 @@ extra:
 plugins:
     - search
     - macros
+    - badges
