@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://jmbruel.github.io/docs/basaalt/notation/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>BASAALT - JMB Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/stylesheets/badge.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/fonts/material-icons.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/shift-away.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/backdrop.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/tippy.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/scale.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/material.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/tippy/light.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/core/core.css" rel="stylesheet" />
+        <link href="../../assets/document_dates/user.config.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "BASAALT";
+        var mkdocs_page_input_path = "basaalt/notation.md";
+        var mkdocs_page_url = "/docs/basaalt/notation/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> JMB Docs
+        </a>
+        <div class="version">
+          {'provider': 'mike'}
+        </div><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">BASAALT</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">JMB Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">BASAALT</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/jmbruel/docs/edit/master/docs/basaalt/notation.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="form-l-notation">FORM-L Notation</h2>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-20'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-20T18:31:31.347644+02:00'></time></span><span data-tippy-content data-tippy-raw='2025-10-20'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-20T18:41:17.174713+02:00'></time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='jmb' data-tippy-content data-tippy-raw='jmb'><span class='avatar-text'></span><img class='avatar' src='https://avatars.githubusercontent.com/jmbruel' /></div></div></div></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>WARNING: Work in progress. This document is not complete.</p>
+<!-- 
+For easy identification, illustrative examples are given within boxes with a light grey background (see <<voltage-property>>). 
+
+FORM-L models are written using this `font`. 
+Comments are written with a normal font.
+
+Names follow the _CamelCase_ convention, where names based on multiple words are written without separators, the beginning of each word (except the first one) being marked by a single capital letter.
+Model and template names begin with a capital letter, whereas instance names begin with a lowercase letter. 
+For example:
+
+`Voltage mpsVoltage`:: where Voltage is a type (i.e., a template), and mpsVoltage a
+variable (i.e., an instance)
+• BpsIntroduction the name of a model
+By convention, event names begin with an e. Also, the use of a predefined FORM-L standard library
+defining physical types and constants of various types is assumed. For example:
+• 1*s 1 second
+• 10*V 10 volts (constants representing standard units begin sometimes with a capital letter
+to conform to the international standard notation)
+• 100*ms 100 milliseconds
+• 1000*kW 1000 kilowatts
+
+To facilitate legibility and understanding, the examples are shown with syntactic highlighting as can be
+provided by syntactic editors such as jEdit or Notepad++:
+
+• General purpose keywords are in [.blue]#_deep blue italics begin end_#
+• The nature of a FORM-L item and the types defined by the standard library are in deep italics: Property, Class, Boolean, Mass
+green
+• Keywords related to time locators are in light blue italics: when, otherwise
+• Keywords related to selectors are in pink italics: for all, such that
+• Keywords related to actions (assignments, event signals, constraints and object deletions) are in
+brown italics: define, is, ensure
+• Named operator are in light green italics: and
+• Attributes names are in grey italics: next, derivative, rate
+• Constants from the standard library, predefined values, number and string literals are in red: A, "string", true, me, deferred
+5, s,
+
+[[voltage-property]]
+.An example of a property definition
+[source]
+----
+Voltage mpsVoltage begin
+ensure value in [0, 240]*V;
+ensure derivative in [-100, 100]*V/s;
+end mpsVoltage;
+----
+
+For easy identification, illustrative examples are given within boxes with a light grey background. FORM-L models are written using this +font+. Comments are written with a normal font.
+
+Names follow the _CamelCase_ convention, where names based on multiple words are written without separators, the beginning of each word (except the first one) being marked by a single capital letter. Model and template names begin with a capital letter, whereas instance names begin with a lowercase letter. For example:
+
++Voltage mpsVoltage+:: where _Voltage_ is a type (i.e., a template), and _mpsVoltage_ a variable (i.e., an instance)
++BpsIntroduction+:: the name of a model
+
+By convention, event names begin with an _e_. Also, the use of a predefined FORM-L standard library defining _physical types_ and _constants_ of various types is assumed. For example:
+
++1*s+:: 1 second
++10*V+:: 10 volts (constants representing standard units begin sometimes with a capital letter to conform to the international standard notation)
++100*ms+:: 100 milliseconds
+[.red]#*+1000*kW+*#:: 1000 kilowatts
+
+To facilitate legibility and understanding, the examples are shown with syntactic highlighting as can be provided by syntactic editors such as +Edit+ or +Notepad++:.
+
+* General purpose keywords are in [.blue]#_deep blue italics_#: [.blue]#_begin end_#
+* The nature of a FORM-L item and the types defined by the standard library are in [.green]#_deep green italics_#: [.green]#_Property_#, [.green]#_Class_#, [.green]#_Boolean_#, [.green]#_Mass_#
+* Keywords related to time locators are in [.lblue]#_light blue italics_#: [.lblue]#_when_#, [.lblue]#_otherwise_#
+* Keywords related to selectors are in [.pink]#_pink italics_#: [.pink]#_for all_#, [.pink]#_such that_#
+* Keywords related to *actions* (assignments, event signals, constraints and object deletions) are in [.brown]#_brown italics_#: [.brown]#_define_#, [.brown]#_is_#, [.brown]#_ensure_#
+* Named operator are in [.lgreen]#_light green italics_#: [.lgreen]#_and_#
+* Attributes names are in [.grey]#_grey italics_#: [.grey]#_next_#, [.grey]#_derivative_#, [.grey]#_rate_#
+* Constants from the standard library, predefined values, number and string literals are in [.red]#red#: [.red]#5#, [.red]#s#, [.red]#A#, [.red]#"string"#, [.red]#true#, [.red]#me#, [.red]#deferred#
+
+[source, subs="quotes", role="light-grey-bg"]
+----
+[.green]#*_Voltage_*# [.black]#*mpsVoltage*# [.blue]#*_begin_*#
+    [.brown]#*_ensure_*# [.grey]#*_value_*# in &#91;[.red]#0#, [.red]#240#&#93;*V*;
+    [.brown]#*ensure*# [.grey]#derivative# in &#91;[.red]#-100#, [.red]#100#&#93;*V/s*;
+[.blue]#*end*# mpsVoltage;
+---- -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../about/" class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jmbruel/docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../assets/document_dates/core/timeago.min.js"></script>
+      <script src="../../search/main.js"></script>
+      <script src="../../assets/javascripts/badge.js" async></script>
+      <script src="../../assets/document_dates/tippy/popper.min.js"></script>
+      <script src="../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      <script src="../../assets/document_dates/core/default.config.js"></script>
+      <script src="../../assets/document_dates/user.config.js"></script>
+      <script src="../../assets/document_dates/core/utils.js"></script>
+      <script src="../../assets/document_dates/core/core.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
