@@ -1,0 +1,23 @@
+# (c) JMB 2025
+site_name: JMB Docs
+
+theme:
+  name: mkdocs
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  navigation_depth: 2
+  locale: fr
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+extra:
+    jmb: "[Jean-Michel Bruel](https://jmbruel.netlify.app)"
+
+plugins:
+    - search
+    - macros
