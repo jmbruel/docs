@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="en" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://jmbruel.github.io/docs/basaalt/notation/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>BASAALT - JMB Docs</title>
+    <title>Notation - JMB Docs</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extras.css" rel="stylesheet" />
         <link href="../../assets/stylesheets/badge.css" rel="stylesheet" />
         <link href="../../assets/document_dates/fonts/material-icons.css" rel="stylesheet" />
         <link href="../../assets/document_dates/tippy/shift-away.css" rel="stylesheet" />
@@ -22,7 +23,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "BASAALT";
+        var mkdocs_page_name = "Notation";
         var mkdocs_page_input_path = "basaalt/notation.md";
         var mkdocs_page_url = "/docs/basaalt/notation/";
       </script>
@@ -56,15 +57,18 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
-                </li>
-              </ul>
+              <p class="caption"><span class="caption-text">BASAALT</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">BASAALT</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Notation</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#notation-for-examples">Notation for Examples</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notation-for-syntax">Notation for Syntax</a>
+    </li>
     </ul>
-                </li>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../refs/">Refs</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -80,7 +84,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">BASAALT</li>
+          <li class="breadcrumb-item">BASAALT</li>
+      <li class="breadcrumb-item active">Notation</li>
     <li class="wy-breadcrumbs-aside">
           <a href="https://github.com/jmbruel/docs/edit/master/docs/basaalt/notation.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
@@ -91,101 +96,111 @@
             <div class="section" itemprop="articleBody">
               
                 <h2 id="form-l-notation">FORM-L Notation</h2>
-<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-20'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-20T18:31:31.347644+02:00'></time></span><span data-tippy-content data-tippy-raw='2025-10-20'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-20T18:41:17.174713+02:00'></time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='jmb' data-tippy-content data-tippy-raw='jmb'><span class='avatar-text'></span><img class='avatar' src='https://avatars.githubusercontent.com/jmbruel' /></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-20'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-20T18:31:31.347644+02:00'></time></span><span data-tippy-content data-tippy-raw='2025-10-21'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-21T11:17:03+02:00'></time></span></div></div>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+bl { color: #1c6079ff }
+lightblue { color: LightBlue }
+pink { color: #e260d9 }
+brown { color: Brown }
+lgreen { color: LightGreen }
+grey { color: Grey }
+</style>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Work in progress. This document is not complete.</p>
 </div>
-<p>WARNING: Work in progress. This document is not complete.</p>
-<!-- 
-For easy identification, illustrative examples are given within boxes with a light grey background (see <<voltage-property>>). 
-
-FORM-L models are written using this `font`. 
-Comments are written with a normal font.
-
-Names follow the _CamelCase_ convention, where names based on multiple words are written without separators, the beginning of each word (except the first one) being marked by a single capital letter.
+<h3 id="notation-for-examples">Notation for Examples</h3>
+<p>For easy identification, illustrative examples are given within boxes with a light grey background (see <a href="#voltage-property">voltage-property</a>). </p>
+<p>FORM-L models are written using this <code>font</code>. 
+Comments are written with a normal font.</p>
+<p>Names follow the <em>CamelCase</em> convention, where names based on multiple words are written without separators, the beginning of each word (except the first one) being marked by a single capital letter.
 Model and template names begin with a capital letter, whereas instance names begin with a lowercase letter. 
-For example:
+For example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:50%">FORM-L</div></th>
+<th style="text-align: left;"><div style="width:50%">Explanation</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><g><em>Voltage</em></g> <strong>mpsVoltage</strong></td>
+<td style="text-align: left;">where <code>Voltage</code> is a type (i.e., a template), and mpsVoltage a variable (i.e., an instance)</td>
+</tr>
+<tr>
+<td style="text-align: left;">BpsIntroduction</td>
+<td style="text-align: left;">the name of a model</td>
+</tr>
+</tbody>
+</table>
+<p>By convention, event names begin with an <code>e</code>. Also, the use of a predefined FORM-L standard library defining physical types and constants of various types is assumed. </p>
+<p>For example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><div style="width:50%">FORM-L</div></th>
+<th style="text-align: left;"><div style="width:50%">Explanation</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><r>1</r>*<r>s</r></td>
+<td style="text-align: left;">1 second</td>
+</tr>
+<tr>
+<td style="text-align: left;"><r>10</r>*<r>V</r></td>
+<td style="text-align: left;">10 volts (constants representing standard units begin sometimes with a capital letter to conform to the international standard notation)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><r>100</r>*<r>ms</r></td>
+<td style="text-align: left;">100 milliseconds</td>
+</tr>
+<tr>
+<td style="text-align: left;"><r>1000</r>*<r>kW</r></td>
+<td style="text-align: left;">1000 kilowatts</td>
+</tr>
+</tbody>
+</table>
+<p>To facilitate legibility and understanding, the examples are shown with syntactic highlighting as can be provided by syntactic editors such as jEdit or Notepad++:</p>
+<ul>
+<li>General purpose keywords are in <bl> <em>deep blue italics begin end</em></bl></li>
+<li>The nature of a FORM-L item and the types defined by the standard library are in <g><em>deep italics: Property, Class, Boolean, Mass</em></g></li>
+<li>Keywords related to time locators are in <lblue><em>light blue italics when otherwise</em></lblue></li>
+<li>Keywords related to selectors are in <pink> <em>pink italics: for all, such that</em></pink></li>
+<li>Keywords related to actions (assignments, event signals, constraints and object deletions) are in <brown> <em>brown italics: define, is, ensure</em></brown></li>
+<li>Named operator are in <lgreen><em>light green italics: and</em></lgreen></li>
+<li>Attributes names are in <grey><em>grey italics: next, derivative, rate</em></grey></li>
+<li>Constants from the standard library, predefined values, number and string literals are in <r>red: A, "string", true, me, deferred</r></li>
+</ul>
+<p><a name="voltage-property"></a></p>
+<!-- !!! abstract "An example of a property definition (Voltage Property)" -->
 
-`Voltage mpsVoltage`:: where Voltage is a type (i.e., a template), and mpsVoltage a
-variable (i.e., an instance)
-• BpsIntroduction the name of a model
-By convention, event names begin with an e. Also, the use of a predefined FORM-L standard library
-defining physical types and constants of various types is assumed. For example:
-• 1*s 1 second
-• 10*V 10 volts (constants representing standard units begin sometimes with a capital letter
-to conform to the international standard notation)
-• 100*ms 100 milliseconds
-• 1000*kW 1000 kilowatts
-
-To facilitate legibility and understanding, the examples are shown with syntactic highlighting as can be
-provided by syntactic editors such as jEdit or Notepad++:
-
-• General purpose keywords are in [.blue]#_deep blue italics begin end_#
-• The nature of a FORM-L item and the types defined by the standard library are in deep italics: Property, Class, Boolean, Mass
-green
-• Keywords related to time locators are in light blue italics: when, otherwise
-• Keywords related to selectors are in pink italics: for all, such that
-• Keywords related to actions (assignments, event signals, constraints and object deletions) are in
-brown italics: define, is, ensure
-• Named operator are in light green italics: and
-• Attributes names are in grey italics: next, derivative, rate
-• Constants from the standard library, predefined values, number and string literals are in red: A, "string", true, me, deferred
-5, s,
-
-[[voltage-property]]
-.An example of a property definition
-[source]
-----
-Voltage mpsVoltage begin
+<pre><code>Voltage mpsVoltage begin
 ensure value in [0, 240]*V;
 ensure derivative in [-100, 100]*V/s;
 end mpsVoltage;
-----
-
-For easy identification, illustrative examples are given within boxes with a light grey background. FORM-L models are written using this +font+. Comments are written with a normal font.
-
-Names follow the _CamelCase_ convention, where names based on multiple words are written without separators, the beginning of each word (except the first one) being marked by a single capital letter. Model and template names begin with a capital letter, whereas instance names begin with a lowercase letter. For example:
-
-+Voltage mpsVoltage+:: where _Voltage_ is a type (i.e., a template), and _mpsVoltage_ a variable (i.e., an instance)
-+BpsIntroduction+:: the name of a model
-
-By convention, event names begin with an _e_. Also, the use of a predefined FORM-L standard library defining _physical types_ and _constants_ of various types is assumed. For example:
-
-+1*s+:: 1 second
-+10*V+:: 10 volts (constants representing standard units begin sometimes with a capital letter to conform to the international standard notation)
-+100*ms+:: 100 milliseconds
-[.red]#*+1000*kW+*#:: 1000 kilowatts
-
-To facilitate legibility and understanding, the examples are shown with syntactic highlighting as can be provided by syntactic editors such as +Edit+ or +Notepad++:.
-
-* General purpose keywords are in [.blue]#_deep blue italics_#: [.blue]#_begin end_#
-* The nature of a FORM-L item and the types defined by the standard library are in [.green]#_deep green italics_#: [.green]#_Property_#, [.green]#_Class_#, [.green]#_Boolean_#, [.green]#_Mass_#
-* Keywords related to time locators are in [.lblue]#_light blue italics_#: [.lblue]#_when_#, [.lblue]#_otherwise_#
-* Keywords related to selectors are in [.pink]#_pink italics_#: [.pink]#_for all_#, [.pink]#_such that_#
-* Keywords related to *actions* (assignments, event signals, constraints and object deletions) are in [.brown]#_brown italics_#: [.brown]#_define_#, [.brown]#_is_#, [.brown]#_ensure_#
-* Named operator are in [.lgreen]#_light green italics_#: [.lgreen]#_and_#
-* Attributes names are in [.grey]#_grey italics_#: [.grey]#_next_#, [.grey]#_derivative_#, [.grey]#_rate_#
-* Constants from the standard library, predefined values, number and string literals are in [.red]#red#: [.red]#5#, [.red]#s#, [.red]#A#, [.red]#"string"#, [.red]#true#, [.red]#me#, [.red]#deferred#
-
-[source, subs="quotes", role="light-grey-bg"]
-----
-[.green]#*_Voltage_*# [.black]#*mpsVoltage*# [.blue]#*_begin_*#
-    [.brown]#*_ensure_*# [.grey]#*_value_*# in &#91;[.red]#0#, [.red]#240#&#93;*V*;
-    [.brown]#*ensure*# [.grey]#derivative# in &#91;[.red]#-100#, [.red]#100#&#93;*V/s*;
-[.blue]#*end*# mpsVoltage;
----- -->
+</code></pre>
+<h3 id="notation-for-syntax">Notation for Syntax</h3>
+<p>Also for easy identification, the FORM-L syntax is formally specified in an Xtext-like format <a href="../refs/#Bettini16">[Bettini16]</a>, within boxes with a light yellow background. Xtext is a framework for implementing domain-specific languages...</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../about/" class="btn btn-neutral float-left" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../refs/" class="btn btn-neutral float-right" title="Refs">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>&copy; ACDC</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -206,8 +221,10 @@ To facilitate legibility and understanding, the examples are shown with syntacti
         </span>
     
     
-      <span><a href="../../about/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../refs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
