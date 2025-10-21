@@ -73,7 +73,9 @@ theme:
 
 # Additional configuration
 extra:
+  CRML: "[CRML](https://embrace-project.org/)"
   jmb: "[Jean-Michel Bruel](https://jmbruel.netlify.app)"
+  vscode: "[vscode](https://code.visualstudio.com/)"
   recently_updated_docs:
   version:
     provider: mike
@@ -112,16 +114,19 @@ plugins:
     - git-revision-date-localized:
         enable_creation_date: true
     - include_dir_to_nav
-    - pdf-export:
-        combined: true
-        verbose: false
-        media_type: print
+    # - pdf-export:
+    #     combined: true
+    #     verbose: false
+    #     media_type: print
         # enabled_if_env: ENABLE_PDF_EXPORT
 
 markdown_extensions:
   - toc:
       baselevel: 2
   - admonition
+  - attr_list
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
 
 nav:
   - Home: index.md
