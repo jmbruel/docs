@@ -4,30 +4,19 @@ repo_url: https://github.com/jmbruel/docs
 repo_name: GitHub
 site_url: https://jmbruel.github.io/docs/
 site_description: Documentation site of Jean-Michel Bruel
-copyright: ':copyright: ACDC' 
+copyright: '&copy; ACDC' 
 
-# theme:
-#   name: readthedocs #mkdocs
-#   shortcuts:
-#     help: 191    # ?
-#     next: 78     # n
-#     previous: 80 # p
-#     search: 83   # s
-#   navigation_depth: 2
-#   # locale: fr
-#   features:
-#     - navigation.instant
-#     - navigation.instant.prefetch
-#     - navigation.tabs
-#     - navigation.tabs.sticky
-#     - navigation.sections
-#     - navigation.top
-#     - navigation.tracking
-#     - toc.follow
 # Configuration
 theme:
   name: readthedocs
   # custom_dir: material/overrides
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  navigation_depth: 2
+  # locale: fr
   features:
     - announce.dismiss
     - content.action.edit
@@ -42,8 +31,8 @@ theme:
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
+    - navigation.instant
+    - navigation.instant.prefetch
     # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
@@ -75,18 +64,12 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
-  font:
-    text: Roboto
-    code: Roboto Mono
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
   favicon: assets/favicon.png
   icon:
     logo: logo
-
-
-nav:
-  - Home: index.md
-  - About: about.md
-  - BASAALT: basaalt
 
 # Additional configuration
 extra:
@@ -111,6 +94,7 @@ extra_css:
 
 plugins:
     - search
+    - autorefs
     - macros
     - badges
     - document-dates:
@@ -130,8 +114,11 @@ plugins:
     - include_dir_to_nav
     # - with-pdf
 
-
 markdown_extensions:
   - toc:
       baselevel: 2
   - admonition
+
+nav:
+  - Home: index.md
+  - BASAALT: basaalt
