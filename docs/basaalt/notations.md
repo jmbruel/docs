@@ -1,4 +1,4 @@
-# FORM-L Notation
+# FORM-L Notations
 
 <style>
 r { color: Red }
@@ -28,7 +28,7 @@ For example:
 
 | <div style="width:50%">FORM-L</div>    |  <div style="width:50%">Explanation</div>      | 
 |:----------|:------------------|
-| <g>_Voltage_</g> **mpsVoltage** | where `Voltage` is a type (i.e., a template), and mpsVoltage a variable (i.e., an instance) |
+| <g>_Voltage_</g> **mpsVoltage** | where `Voltage` is a type (i.e., a template), and `mpsVoltage` a variable (i.e., an instance) |
 |BpsIntroduction | the name of a model |
 
 By convention, event names begin with an `e`. Also, the use of a predefined FORM-L standard library defining physical types and constants of various types is assumed. 
@@ -66,6 +66,6 @@ To facilitate legibility and understanding, the examples are shown with syntacti
 
 ## Notation for Syntax
 
-Also for easy identification, the FORM-L syntax is formally specified in an Xtext-like format [[Bettini16]](refs.md#Bettini16), within boxes with a light yellow background. Xtext is a framework for implementing domain-specific languages...
+Also for easy identification, the FORM-L syntax is formally specified in an Xtext-like format [[Bettini16]](references.md#Bettini16), within boxes with a light yellow background. Xtext is a framework for implementing domain-specific languages...
 
 
