@@ -3,6 +3,9 @@
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 By {{jmb}}.
 
+!!! warning
+    Work in progress. This document is not complete.
+
 
 ## Commands
 

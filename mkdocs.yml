@@ -4,24 +4,110 @@ repo_url: https://github.com/jmbruel/docs
 repo_name: GitHub
 site_url: https://jmbruel.github.io/docs/
 site_description: Documentation site of Jean-Michel Bruel
-# copyright: '2025, Jean-Michel Bruel' 
+copyright: ':copyright: ACDC' 
 
+# theme:
+#   name: readthedocs #mkdocs
+#   shortcuts:
+#     help: 191    # ?
+#     next: 78     # n
+#     previous: 80 # p
+#     search: 83   # s
+#   navigation_depth: 2
+#   # locale: fr
+#   features:
+#     - navigation.instant
+#     - navigation.instant.prefetch
+#     - navigation.tabs
+#     - navigation.tabs.sticky
+#     - navigation.sections
+#     - navigation.top
+#     - navigation.tracking
+#     - toc.follow
+# Configuration
 theme:
-  name: mkdocs
-  shortcuts:
-    help: 191    # ?
-    next: 78     # n
-    previous: 80 # p
-    search: 83   # s
-  navigation_depth: 2
-  locale: fr
+  name: readthedocs
+  # custom_dir: material/overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
 
 nav:
   - Home: index.md
   - About: about.md
+  - BASAALT: basaalt
 
+# Additional configuration
 extra:
-    jmb: "[Jean-Michel Bruel](https://jmbruel.netlify.app)"
+  jmb: "[Jean-Michel Bruel](https://jmbruel.netlify.app)"
+  recently_updated_docs:
+  version:
+    provider: mike
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jmbruel
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/jmbruel
+
+extra_css:
+  - stylesheets/extras.css
 
 plugins:
     - search
@@ -35,8 +121,17 @@ plugins:
           - blog/*                   # Example: exclude all files in blog folder, including subfolders
         date_format: '%Y-%m-%d'  # Date format strings (e.g., %Y-%m-%d, %b %d, %Y)
         time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-        show_author: true        # Author display mode: true(avatar) text(text) false(hidden)
+        show_author: false        # Author display mode: true(avatar) text(text) false(hidden)
         recently-updated:    # Whether to turn on recently updated data, default: false
           limit: 10        # Limit the number of docs displayed
           label: "Recently Updated"
+    - git-revision-date-localized:
+        enable_creation_date: true
+    - include_dir_to_nav
+    # - with-pdf
 
+
+markdown_extensions:
+  - toc:
+      baselevel: 2
+  - admonition
